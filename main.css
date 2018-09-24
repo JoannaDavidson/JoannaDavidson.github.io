@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans;
+}
+
+html {
+}
+
+body {
+    width: 100%;
+}
+
+.header-container {
+    width: 100%;
+    background-color: #111111;
+    padding-bottom: 20px;
+}
+
+.header {
+    background-color: #ee4433;
+    color: #fff9de;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: left;
+    font-family: sans-serif;
+    border-radius: 0px 150px 150px 150px;
+    width: 300px;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid #ffc21f;
+
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.catch {
+    font-size: 1rem;
+}
+
+.socialinks {
+    list-style-type: none;
+}
+
+.nav {
+    width: 300px;
+    max-width: 25%;
+    text-align: right;
+}
+
+.nav li {
+    font-size: 2rem;
+    width: 100%;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav__bio {
+    background-color: #111111;
+    padding: 5px;
+}
+
+.nav__bio a:hover {
+    background-image: repeating-linear-gradient(295deg, rgba(238,68,51,.8), rgba(238,68,51,.8) 2px, transparent 2px, transparent 8px);
+}
+
+.nav__portfolio {
+    background-color: #fff9de;
+    padding: 5px;
+}
+
+.nav__portfolio a:hover {
+    background-image: repeating-linear-gradient(295deg, rgba(255,178,15,.8), rgba(255,178,15,.8) 2px, transparent 2px, transparent 8px);
+}
+
+.nav__resume {
+    background-color: #ee4433;
+    padding: 5px;
+}
+
+.nav__resume a:hover {
+    background-image: repeating-linear-gradient(295deg, rgba(88,39,7,.8), rgba(88,39,7,8) 2px, transparent 2px, transparent 8px);
+}
+
+.nav__bio-link {
+    font-family: Oswald;
+    color: #fff9de;
+}
+
+.nav__portfolio-link {
+    font-family: Oswald;
+    width: 100%;
+    height: 40px;
+    color: #972d07
+    }
+
+.nav__resume-link {
+    font-family: Oswald;
+    width: 100%;
+    height: 40px;
+    color: #eeeeee;
+}
+
+.page-container {
+    display: flex;
+    align-content: flex-start;
+}
+
+.page-container__about {
+    padding: 20px;
+    width: 75%;
+}
+
+.page-container__portfolio {
+    padding: 20px;
+    width: 75%;
+}
+
+.page-container__resume {
+    padding: 20px;
+    width: 75%;
+}
+
+.project {
+    display: flex;
+    align-content: flex-start;
+}
+
+.lazyriver {
+
+}
+
+.lazyriver img {
+
+}
+
+.happyvalley {
+
+}
+
+.happyvalley img {
+
+}
+
+.css-background {
+
+}
+
+.css-background dl {
+    list-style:none;
+}
+
+.css-background dd {
+    position:relative;
+    width: 300px;
+    height:300px;
+    margin:10px;
+    float:left;
+}
+
+.footer {
+    width: 100%;
+}
+
