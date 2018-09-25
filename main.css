@@ -15,7 +15,7 @@ body {
 .header-container {
     width: 100%;
     background-color: #111111;
-    padding-bottom: 20px;
+    padding: 25px;
 }
 
 .header {
@@ -26,21 +26,28 @@ body {
     align-content: flex-start;
     justify-content: left;
     font-family: sans-serif;
-    border-radius: 0px 150px 150px 150px;
-    width: 300px;
+    border-radius: 0px 50% 50% 50%;
+    width: 225px;
+    height: 225px;
     text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 .logo {
     width: 150px;
     height: 150px;
-    margin: 0 auto;
-    border-radius: 50%;
+    margin: 25px 15px auto auto;
+    border-radius: 50% 50% 50% 0;
     border: 5px solid #ffc21f;
+    border-bottom-width: 20px;
+    border-left-width: 20px;
 
 }
 
 .title {
+    margin: 15px auto auto 20px;
     font-size: 2rem;
 }
 
@@ -72,7 +79,7 @@ body {
     padding: 5px;
 }
 
-.nav__bio a:hover {
+.nav__bio:hover {
     background-image: repeating-linear-gradient(295deg, rgba(238,68,51,.8), rgba(238,68,51,.8) 2px, transparent 2px, transparent 8px);
 }
 
@@ -81,7 +88,7 @@ body {
     padding: 5px;
 }
 
-.nav__portfolio a:hover {
+.nav__portfolio:hover {
     background-image: repeating-linear-gradient(295deg, rgba(255,178,15,.8), rgba(255,178,15,.8) 2px, transparent 2px, transparent 8px);
 }
 
@@ -90,7 +97,7 @@ body {
     padding: 5px;
 }
 
-.nav__resume a:hover {
+.nav__resume:hover {
     background-image: repeating-linear-gradient(295deg, rgba(88,39,7,.8), rgba(88,39,7,8) 2px, transparent 2px, transparent 8px);
 }
 
