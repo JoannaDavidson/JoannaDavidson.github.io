@@ -15,12 +15,12 @@ body {
 
 .header-container {
     width: 100%;
-    background-color: #111111;
+    background-color: #111;
     padding: 25px;
 }
 
 .header {
-    background-color: #ee4433;
+    background-color: #e43;
     color: #fff9de;
     display: flex;
     flex-direction: column;
@@ -76,7 +76,7 @@ body {
 }
 
 .nav__bio {
-    background-color: #111111;
+    background-color: #111;
     padding: 5px;
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 .nav__resume {
-    background-color: #ee4433;
+    background-color: #e43;
     padding: 5px;
 }
 
@@ -118,7 +118,7 @@ body {
     font-family: Oswald;
     width: 100%;
     height: 40px;
-    color: #eeeeee;
+    color: #eee;
 }
 
 .page-container {
@@ -131,12 +131,32 @@ body {
     width: 75%;
 }
 
-.page-container__portfolio {
-    padding: 20px;
-    width: 75%;
+.footer {
+    width: 100%;
 }
 
-.page-container__resume {
+.left-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+}
+
+.left-tartan-ribbon {
+    flex-grow: 1;
+    background-color: rgba(0,104,24,1.0);
+    background-image: repeating-linear-gradient(50deg, transparent, transparent 2px, rgba(0,104,24,.4) 2px, rgba(0,104,24,.4) 3px, transparent 3px, transparent 5px, rgba(0,104,24,.4) 5px),
+    repeating-linear-gradient(rgba(200,0,0,.7), rgba(200,0,0,.7) 2px, rgba(44,44,128,.5) 2px, rgba(44,44,128,.5) 12px, transparent 14px, transparent 15px, rgba(44,44,128,.5) 15px, rgba(44,44,128,.5) 16px, transparent 16px, transparent 31px, rgba(16,16,16,.7) 31px, rgba(16,16,16,.7) 32px, transparent 32px, transparent 47px, rgba(16,16,16,.7) 47px, rgba(16,16,16,.7) 48px, transparent 48px, transparent 49px, rgba(16,16,16,.7) 49px, rgba(16,16,16,.7) 60px, rgba(200,0,0,.7) 60px, rgba(200,0,0,.7) 61px, rgba(16,16,16,.7) 61px, rgba(16,16,16,.7) 72px, transparent 72px, transparent 73px, rgba(16,16,16,.7) 73px, rgba(16,16,16,.7) 74px, transparent 74px, transparent 89px, rgba(16,16,16,.7) 89px, rgba(16,16,16,.7) 90px, transparent 91px, transparent 106px, rgba(44,44,128,.5) 106px, rgba(44,44,128,.5) 107px, transparent 107px, transparent 108px, rgba(44,44,128,.5) 108px, rgba(44,44,128,.5) 119px),
+    repeating-linear-gradient(270deg, rgba(200,0,0,.8), rgba(200,0,0,.8) 2px, rgba(44,44,128,.6) 2px, rgba(44,44,128,.6) 12px, transparent 14px, transparent 15px, rgba(44,44,128,.6) 15px, rgba(44,44,128,.6) 16px, transparent 16px, transparent 31px, rgba(16,16,16,.8) 31px, rgba(16,16,16,.8) 32px, transparent 32px, transparent 47px, rgba(16,16,16,.8) 47px, rgba(16,16,16,.8) 48px, transparent 48px, transparent 49px, rgba(16,16,16,.8) 49px, rgba(16,16,16,.8) 60px, rgba(200,0,0,.8) 60px, rgba(200,0,0,.8) 61px, rgba(16,16,16,.8) 61px, rgba(16,16,16,.8) 72px, transparent 72px, transparent 73px, rgba(16,16,16,.8) 73px, rgba(16,16,16,.8) 74px, transparent 74px, transparent 89px, rgba(16,16,16,.8) 89px, rgba(16,16,16,.8) 90px, transparent 91px, transparent 106px, rgba(44,44,128,.6) 106px, rgba(44,44,128,.6) 107px, transparent 107px, transparent 108px, rgba(44,44,128,.6) 108px, rgba(44,44,128,.6) 119px);
+}
+
+dl {
+    list-style: none;
+}
+
+/* Portfolio page */
+
+.page-container__portfolio {
     padding: 20px;
     width: 75%;
 }
@@ -150,49 +170,94 @@ body {
     
 }
 
-.lazyriver img {
-    
-}
-
 .happyvalley {
     
 }
 
-.happyvalley img {
-    
+.port_thumb {
+    width: 30%;
+    height: 30%;
 }
 
-.css-background {
-    
-}
-
-.css-background dl {
-    list-style:none;
-}
-
-.css-background dd {
-    position:relative;
-    width: 300px;
-    height:300px;
-    margin:10px;
-    float:left;
-}
-
-.footer {
-    width: 100%;
-}
-
-.left-container {
+.css_examples_container {
     display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 10px;
 }
 
-.left-tartan-ribbon {
-    flex-grow: 1;
-    background-color: rgba(0,104,24,1.0);
-    background-image: repeating-linear-gradient(60deg, transparent, transparent 2px, rgba(0,104,24,.4) 2px, rgba(0,104,24,.4) 3px, transparent 3px, transparent 5px, rgba(0,104,24,.4) 5px),
+.css_examples_header {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.css_examples_header p {
+    font-size: 1rem;
+}
+
+.css_examples {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #ffc21f;
+    border-radius: 50% 50% 50% 0;
+    border-bottom-width: 15px;
+    border-left-width: 15px;
+}
+
+.css_examples_text {
+    font-size: 0.9rem;
+    background-color: #e43;
+    border: 2px solid #111;
+    text-align: center;
+    color: #fff9de
+}
+
+#davidson_modern {
+    background-color: #006818;
+    background-image: repeating-linear-gradient(50deg, transparent, transparent 2px, rgba(0,104,24,.4) 2px, rgba(0,104,24,.4) 3px, transparent 3px, transparent 5px, rgba(0,104,24,.4) 5px),
     repeating-linear-gradient(rgba(200,0,0,.7), rgba(200,0,0,.7) 2px, rgba(44,44,128,.5) 2px, rgba(44,44,128,.5) 12px, transparent 14px, transparent 15px, rgba(44,44,128,.5) 15px, rgba(44,44,128,.5) 16px, transparent 16px, transparent 31px, rgba(16,16,16,.7) 31px, rgba(16,16,16,.7) 32px, transparent 32px, transparent 47px, rgba(16,16,16,.7) 47px, rgba(16,16,16,.7) 48px, transparent 48px, transparent 49px, rgba(16,16,16,.7) 49px, rgba(16,16,16,.7) 60px, rgba(200,0,0,.7) 60px, rgba(200,0,0,.7) 61px, rgba(16,16,16,.7) 61px, rgba(16,16,16,.7) 72px, transparent 72px, transparent 73px, rgba(16,16,16,.7) 73px, rgba(16,16,16,.7) 74px, transparent 74px, transparent 89px, rgba(16,16,16,.7) 89px, rgba(16,16,16,.7) 90px, transparent 91px, transparent 106px, rgba(44,44,128,.5) 106px, rgba(44,44,128,.5) 107px, transparent 107px, transparent 108px, rgba(44,44,128,.5) 108px, rgba(44,44,128,.5) 119px),
     repeating-linear-gradient(270deg, rgba(200,0,0,.8), rgba(200,0,0,.8) 2px, rgba(44,44,128,.6) 2px, rgba(44,44,128,.6) 12px, transparent 14px, transparent 15px, rgba(44,44,128,.6) 15px, rgba(44,44,128,.6) 16px, transparent 16px, transparent 31px, rgba(16,16,16,.8) 31px, rgba(16,16,16,.8) 32px, transparent 32px, transparent 47px, rgba(16,16,16,.8) 47px, rgba(16,16,16,.8) 48px, transparent 48px, transparent 49px, rgba(16,16,16,.8) 49px, rgba(16,16,16,.8) 60px, rgba(200,0,0,.8) 60px, rgba(200,0,0,.8) 61px, rgba(16,16,16,.8) 61px, rgba(16,16,16,.8) 72px, transparent 72px, transparent 73px, rgba(16,16,16,.8) 73px, rgba(16,16,16,.8) 74px, transparent 74px, transparent 89px, rgba(16,16,16,.8) 89px, rgba(16,16,16,.8) 90px, transparent 91px, transparent 106px, rgba(44,44,128,.6) 106px, rgba(44,44,128,.6) 107px, transparent 107px, transparent 108px, rgba(44,44,128,.6) 108px, rgba(44,44,128,.6) 119px);
+}
+
+#davidson_ancient {
+    background-color: rgba(0,104,24,.7);
+    background-image: repeating-linear-gradient(50deg, transparent, transparent 2px, rgba(0,104,24,.4) 2px, rgba(0,104,24,.4) 3px, transparent 3px, transparent 5px, rgba(0,104,24,.4) 5px),
+    repeating-linear-gradient(rgba(200,0,0,.6), rgba(200,0,0,.6) 2px, rgba(44,44,128,.4) 2px, rgba(44,44,128,.4) 12px, transparent 14px, transparent 15px, rgba(44,44,128,.4) 15px, rgba(44,44,128,.4) 16px, transparent 16px, transparent 31px, rgba(16,16,16,.4) 31px, rgba(16,16,16,.4) 32px, transparent 32px, transparent 47px, rgba(16,16,16,.4) 47px, rgba(16,16,16,.4) 48px, transparent 48px, transparent 49px, rgba(16,16,16,.4) 49px, rgba(16,16,16,.4) 60px, rgba(200,0,0,.6) 60px, rgba(200,0,0,.6) 61px, rgba(16,16,16,.4) 61px, rgba(16,16,16,.4) 72px, transparent 72px, transparent 73px, rgba(16,16,16,.4) 73px, rgba(16,16,16,.4) 74px, transparent 74px, transparent 89px, rgba(16,16,16,.4) 89px, rgba(16,16,16,.4) 90px, transparent 91px, transparent 106px, rgba(44,44,128,.4) 106px, rgba(44,44,128,.4) 107px, transparent 107px, transparent 108px, rgba(44,44,128,.4) 108px, rgba(44,44,128,.4) 119px),
+    repeating-linear-gradient(270deg, rgba(200,0,0,.7), rgba(200,0,0,.7) 2px, rgba(44,44,128,.5) 2px, rgba(44,44,128,.5) 12px, transparent 14px, transparent 15px, rgba(44,44,128,.5) 15px, rgba(44,44,128,.5) 16px, transparent 16px, transparent 31px, rgba(16,16,16,.5) 31px, rgba(16,16,16,.5) 32px, transparent 32px, transparent 47px, rgba(16,16,16,.5) 47px, rgba(16,16,16,.5) 48px, transparent 48px, transparent 49px, rgba(16,16,16,.5) 49px, rgba(16,16,16,.5) 60px, rgba(200,0,0,.7) 60px, rgba(200,0,0,.7) 61px, rgba(16,16,16,.5) 61px, rgba(16,16,16,.5) 72px, transparent 72px, transparent 73px, rgba(16,16,16,.5) 73px, rgba(16,16,16,.5) 74px, transparent 74px, transparent 89px, rgba(16,16,16,.5) 89px, rgba(16,16,16,.5) 90px, transparent 91px, transparent 106px, rgba(44,44,128,.5) 106px, rgba(44,44,128,.5) 107px, transparent 107px, transparent 108px, rgba(44,44,128,.5) 108px, rgba(44,44,128,.5) 119px);
+}
+
+#other_css_example_1 {
+
+}
+
+#other_css_example_2 {
+    
+}
+
+/* Resume page */
+
+.page-container__resume {
+    padding: 20px;
+    width: 75%;
+}
+
+.resume-heading {
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    border-bottom-style: double;
+    border-bottom-width: 6px;
+    border-bottom-color: #666;
+    color: #111;
+}
+
+.resume-section {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #111;
 }

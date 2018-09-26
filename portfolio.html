@@ -11,9 +11,8 @@
 <body>
     <div class="header-container">
       <header class="header">
-        <h1 class="title">Joanna I. Davidson</h1>
+        <div class="title">J<br>I<br>D</div>
         <img class="logo" src="JID-Luckys.jpg">
-        <h2 class="catch">Software Development<br />Technology Support<br />Writing</h2>
       </header>
     </div>
     <div class="page-container">
@@ -23,24 +22,28 @@
                 <li class="nav__portfolio"><a class="nav__portfolio-link" href="portfolio.html">Portfolio</a></li>
                 <li class="nav__resume"><a class="nav__resume-link" href="resume.html">Resume</a></li>
             </ul>
+            <div class="left-container">
+                <div class="left-tartan-ribbon"></div>
+            </div>
         </div>
         <div class="page-container__portfolio">
             <h1>Development Portfolio</h1>
-            <div class="project lazyriver"><img src="LazyRiver.png"></div>
-            <div class="project happyvalley"><img src="HappyValley1.png"><img src="HappyValley2.png"></div>
-            <div class="project css-background"><h3>CSS3 Patterns</h3>
-                <dl>
-                    <dt>Davidson family tartan</dt>
-                    <dd>&nbsp;</dd>
-                </dl>
-                
+            <div class="project lazyriver"><img src="LazyRiver.png" class="port_thumb"></div>
+            <div class="project happyvalley"><img src="HappyValley1.png" class="port_thumb"><img src="HappyValley2.png" class="port_thumb"></div>
+            <div class="project css_examples_container">
+                <div class="css_examples_header">
+                    <b>CSS3 Patterns</b>
+                    <p>Below are examples of CSS backgrounds/textures I've created. Click on the sample to see the code displayed.</p>
+                </div>
+                <div id="davidson_modern" class="css_examples"><div class="css_examples_text">Davidson Modern Tartan</div></div>
+                <div id="davidson_ancient" class="css_examples"><div class="css_examples_text">Davidson Ancient Tartan</div></div>
+                <!-- <div id="other_css_example_1" class="css_examples"><div class="css_examples_text">Other CSS Example 1</div></div> -->
+                <!-- <div id="other_css_example_2" class="css_examples"><div class="css_examples_text">Other CSS Example 2</div></div> -->
             </div>
         </div>
       </div> 
     <footer></footer>
-    <div class="left-container">
-        <div class="left-tartan-ribbon"></div>
-    </div>
+
 </body>
 </html>
 
