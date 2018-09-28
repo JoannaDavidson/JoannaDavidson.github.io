@@ -199,8 +199,17 @@ a {
     display: none;
 }
 
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .content_section {
-    animation: 2s ease-out 0s 1 slide;  
+    animation: 0.5s ease-out 0s 1 slide;  
 }
 
 /* Portfolio page */
