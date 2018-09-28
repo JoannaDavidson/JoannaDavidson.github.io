@@ -96,7 +96,12 @@ a {
 .marquee {
     height: 100px;
     width: 500px;
-    background-color: #e43;
+    background: radial-gradient(circle at bottom left, #e43, #e43 23px, #ffc21f 23px, #ffc21f 25px, #e43 25px, #e43 28px, #ffc21f 28px, #ffc21f 30px, #e43 30px, #e43 33px, #ffc21f 33px, #ffc21f 40px, #e43 40px, #e43) bottom left,
+      radial-gradient(circle at top right, #e43, #e43 23px, #ffc21f 23px, #ffc21f 25px, #e43 25px, #e43 28px, #ffc21f 28px, #ffc21f 30px, #e43 30px, #e43 33px, #ffc21f 33px, #ffc21f 40px, #e43 40px, #e43) top right,
+      radial-gradient(at top left, #e43, #e43) top left,
+      radial-gradient(at bottom right, #e43, #e43) bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
     border-left: 3px solid;
     border-right: 3px solid;
     border-top: 10px double;
@@ -209,7 +214,7 @@ a {
 }
 
 .content_section {
-    animation: 0.5s ease-out 0s 1 slide;  
+    animation: 1s ease-out 0s 1 slide;  
 }
 
 /* Portfolio page */
