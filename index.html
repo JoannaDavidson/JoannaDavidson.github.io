@@ -11,42 +11,150 @@
 </head>
 <body>
     <div class="header-container">
-      <header class="header_left">
-        <div class="title">J<br>I<br>D</div>
-        <img class="logo" src="assets/JID-Luckys.jpg">
-      </header>
-      <div class="header-banner">
+        <header class="header_left">
+            <img class="logo" src="assets/JID-Luckys.jpg">
+        </header>
+        <div class="header-banner">
             <div class="marquee"><p>Joanna Imogen Davidson</p></div>
-            <div class="subname_banner">Software Development - Creative Writing - IT Support</div>
+            <div class="subname_banner"><div>Software Development</div><div>Creative Writing</div><div>IT Support</div></div>
             <div class="social_container">
                 <ul class="header-contacts">
                     <li><a target="_blank" href="https://github.com/joannadavidson"><i class="fab fa-github"></i></a></li>
+                    <li><a target="_blank" href="https://codepen.io/joannadavidson/"><i class="fab fa-codepen"></i></a></li>
                     <li><a target="_blank" href="https://www.linkedin.com/in/joannadavidson/"><i class="fab fa-linkedin"></i></a></li>
                     <li><a target="_blank" href="https://keybase.io/shrikesong"><i class="fab fa-keybase"></i></a></li>
-                    <li><a target="_blank" href="https://codepen.io/joannadavidson/"><i class="fab fa-codepen"></i></a></li>
                     <li><a target="_blank" href="mailto:joanna@shrikesong.com"><i class="fa fa-envelope"></i></a></li>
                 </ul>
             </div>
-      </div>
+        </div>
     </div>
     <div class="page-container">
-      <div class="nav">
-          <ul>
-              <li class="nav__bio"><a class="nav__bio-link" href="index.html">Background</a></li>
-              <li class="nav__portfolio"><a class="nav__portfolio-link" href="portfolio.html">Portfolio</a></li>
-              <li class="nav__resume"><a class="nav__resume-link" href="resume.html">Resume</a></li>
-          </ul>
-          <div class="left-container">
-            <div class="left-tartan-ribbon"></div>
-        </div>        
-      </div>
-      <div class="page-container__about">
-          <h1>My Background</h1>
-          <p>Software and Web developer with over 10 years of Technology Support experience (including helpdesk, networking, VoIP, CCTV). I also offer technical and creative writing services to meet all your professional needs.</p>
-          <p>A native of Wilkes County, NC, I</p>
-      </div>
-    </div>  
-    <footer></footer>
+        <div class="nav">
+            <ul>
+                <li class="nav__bio"><a onclick="aboutMeUnhide()" class="nav__bio-link" href="#">About Me</a></li>
+                <li class="nav__portfolio"><a onclick="portfolioUnhide()" class="nav__portfolio-link" href="#">Portfolio</a></li>
+                <li class="nav__resume"><a onclick="resumeUnhide()" class="nav__resume-link" href="#">Resume</a></li>
+            </ul>       
+        </div>
+        <div id="page-container__about" class="content_section">
+            <h1>My Background</h1>
+            <p>Software and Web developer with over 10 years of Technology Support experience (including helpdesk, networking, VoIP, CCTV). I also offer technical and creative writing services to meet all your professional needs.</p>
+        </div>
+        <div id="page-container__portfolio" class="content_section hide">
+            <h1>Development Portfolio</h1>
+            <div class="development_section">
+                <div class="project"><img src="assets/LazyRiver.png" class="port_thumb"></div>
+                <div class="project"><img src="assets/HappyValley1.png" class="port_thumb"></div>
+            </div>
+            <div class="css_examples_header">
+                    <b>CSS3 Patterns</b>
+                    <p>Below are examples of CSS backgrounds/textures I've created. Click on the sample to see the code displayed.</p>
+            </div>
+            <div class="project css_examples_container">    
+                <div class="css_examples"><div class="css_examples_text">Davidson Modern Tartan</div></div>
+                <div class="css_examples"><div class="css_examples_text">Davidson Ancient Tartan</div></div>
+            </div>
+        </div>
+        <div id="page-container__resume" class="content_section hide">
+            <div class="resume-heading">Joanna I. Davidson</div>
+            <div class="resume-section">Durham, NC | joanna@shrikesong.com | </div>
+            <div class="resume-heading">Purpose</div>
+            <div class="resume-section">Creative professional and eager learner seeking to employ knowledge of Ruby on Rails and agile development along with experience focusing on end user satisfaction into a software development career.</div>
+            <!-- <div class="resume-heading">Skills</div>
+            <div class="resume-section">
+                <dl>
+                    <dt></dt>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                    <dt></dt>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                    <dt></dt>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                </dl>
+            </div> -->
+            <div class="resume-heading">Technical Experience</div>
+            <div class="resume-section">
+                <dl>
+                    <dt>2013&ndash;2015</dt>
+                        <dd><b>Galloway Ridge at Fearrington</b> | Pittsboro, NC</dd>
+                        <dd class="job-title">IT Support Specialist</dd>
+                        <dd></dd>
+                    <dt>2007&ndash;2011</dt>
+                        <dd><b>SHOE SHOW, INC.</b> | Concord, NC</dd>
+                        <dd class="job-title">Technology Specialist</dd>
+                        <dd></dd>
+                    <dt>2006&ndash;Present</dt>
+                        <dd><b>Technology Consultant</b></dd>
+                        <dd class="job-title">Self-employed</dd>
+                        <dd></dd>
+                </dl>
+            </div>
+            <div class="resume-heading">Education</div>
+            <div class="resume-section">
+                <dl>
+                    <dt>2018</dt>
+                        <dd><b>Momentum Learning</b> | Durham, NC</dd>
+                        <dd>Dedicated 12-weeks specializing in highly focused, immersive training centered on language fluency, object-oriented programming, and project-based learning.</dd>
+                    <dt>1995&ndash;1998</dt>
+                        <dd><b>Catawba College</b> | Salisbury, NC</dd>
+                        <dd>Pursued Political Science and Communication Arts.</dd>
+                </dl>
+            </div>
+            <div class="resume-heading">Certifications</div>
+            <div class="resume-section">
+                <dl>
+                    <dt>2007&ndash;Present</dt>
+                        <dd><a target="_blank" href="https://www.certmetrics.com/comptia/public/verification.aspx?code=3815S4MDWFQQSP0S"><img class="comptia-logo" src="assets/comptiaa+.jpg"><br>
+                            COMP001005693577</a></dd>
+                </dl>
+            </div>
+            <div class="resume-heading">Other Work Experience</div>
+            <div class="resume-section">
+                <dl>
+                    <dt>2017&ndash;Present</dt>
+                        <dd><b><a href="https://treehouselit.com"><i>Treehouse</i> Literary Magazine</a></b> | Durham, NC</dd>
+                        <dd class="job-title">Poetry Editor</dd>
+                        <dd></dd>
+                    <dt>2017&ndash;2018</dt>
+                        <dd><b>S&amp;H Youth and Adult Services</b> | Salisbury, NC</dd>
+                        <dd class="job-title">Medical Records Specialist</dd>
+                        <dd></dd>
+                    <dt>1997&ndash;2007</dt>
+                        <dd><b>Rowan Public Library</b> | Salisbury, NC</dd>
+                        <dd class="job-title">Library Assistant</dd>
+                        <dd></dd>
+                    <dt>2000&ndash;2002</dt>
+                        <dd><b>Novant Health - Rowan</b> | Salisbury, NC</dd>
+                        <dd class="job-title">Medical Records Specialist</dd>
+                        <dd></dd>
+                </dl>
+            </div>
+            <div class="resume-heading">Memberships &amp; Boards</div>
+            <div class="resume-section">
+                <dl>
+                    <dt>2014&ndash;Present</dt>
+                        <dd><b>North Carolina Poetry Society</b></dd>
+                        <dd class="job-title">Member</dd>
+                    <dt>2015&ndash;Present</dt>
+                        <dd><b>North Carolina Writers' Network</b></dd>
+                        <dd class="job-title">Member</dd>
+                        <dd></dd>
+                    <dt>2004&ndash;2007</dt>
+                        <dd><b>Salisbury Parks &amp; Recreation Advisory Board</b></dd>
+                        <dd class="job-title">Member</dd>
+                    <dt>2003&ndash;2005</dt>
+                        <dd><b>Metrolina Library Association</b> | Board of Directors</dd>
+                        <dd class="job-title">Director of Public Libraries</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
 
