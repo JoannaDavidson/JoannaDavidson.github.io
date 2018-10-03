@@ -22,3 +22,11 @@ function resumeUnhide() {
     portfolio.classList.add("hide");
     aboutMe.classList.add("hide");
 }
+
+function on() {
+    document.getElementById("querulous").style.display = "block";
+}
+
+function off() {
+    document.getElementById("querulous").style.display = "none";
+}
