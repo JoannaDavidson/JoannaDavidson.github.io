@@ -74,7 +74,7 @@ a {
     list-style: none;
     padding: 10px;
     border: 1px solid maroon;
-    border-radius: 50%;
+    border-radius: 50% 0;
 }
 
 .header-contacts li:hover {
@@ -126,7 +126,6 @@ a {
 }
 
 .nav li {
-    background-color: #fff9de;
     padding: 5px;
     font-size: 2rem;
     width: 100%;
@@ -215,9 +214,9 @@ a {
 .project:hover::after {
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: 40px;
     width: 180px;
-    height: 180px;
+    height: 140px;
     background-color: rgba(16,16,16,.7);
     color: #fff9de;
     font-size: 0.9rem;
@@ -231,8 +230,9 @@ a {
 
 .development_text {
     width: 100%;
+    height: 40px;
     font-size: 0.9rem;
-    background-color: #e43;
+    background-color: maroon;
     border: 2px solid #111;
     text-align: center;
     color: #fff9de
@@ -240,7 +240,7 @@ a {
 
 .port_thumb {
     width: 100%;
-    height: 120px;
+    height: 140px;
 }
 
 .css_examples_container {
