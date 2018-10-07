@@ -348,11 +348,11 @@ dd {
 
 .job-title {
     font-style: italic;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
-.job-desc {
-    font-size: .9rem;
+.job-descr {
+    font-size: 1rem;
 }
 
 .comptia-logo {
