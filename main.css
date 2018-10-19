@@ -16,8 +16,8 @@ a {
 
 .header-container {
     width: 100%;
-    background-color: maroon;
-    padding: 25px;
+    background: linear-gradient(to bottom, rgba(130,0,0,1) 0%, rgba(176,0,0,1) 100%);
+    padding: 20px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -31,7 +31,7 @@ a {
     background: radial-gradient(circle at bottom left, transparent, transparent 23px, #fff9de 23px, #fff9de 25px, transparent 25px, transparent 28px, #fff9de 28px, #fff9de 30px, transparent 30px, transparent 33px, #fff9de 33px, #fff9de 40px, transparent 40px, transparent) bottom left,
     radial-gradient(circle at top right, transparent, transparent 23px, #fff9de 23px, #fff9de 25px, transparent 25px, transparent 28px, #fff9de 28px, #fff9de 30px, transparent 30px, transparent 33px, #fff9de 33px, #fff9de 40px, transparent 40px, transparent) top right,
     radial-gradient(at top left, transparent, transparent) top left,
-    radial-gradient(at bottom right, transparent, transparent) bottom right;
+    radial-gradient(at bottom right, transparent, transparent) bottom right; */
     background-size: 50% 50%;
     background-repeat: no-repeat;
 }
@@ -59,31 +59,37 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.social_container {
+    padding: 0 10px;
+    width: 60px;
+    height: 150px;
 }
 
 .header-contacts {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
     color: #ccc;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .header-contacts li {
     list-style: none;
-    padding: 10px;
-    border: 1px solid maroon;
+    padding: 3px;
+    border: 2px solid transparent;
     border-radius: 50% 0;
 }
 
 .header-contacts li:hover {
-    border-color: #fff9de;
+    border: 2px solid #fff9de;
 }
 
 .header-contacts a{
     color: #fff9de;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .header-contacts a:hover{
@@ -91,19 +97,26 @@ a {
 }
 
 .marquee {
-    height: 100px;
-    width: 500px;
-    border-radius: 45px 0 45px 0;
+    margin: 20px;
+    border: 3px solid #fff9de;
+    height: 20px;
+    width: 90%;
+    border-radius: 30px;
     display: flex;
     flex-direction: row;
 }
 
 .marquee p {
-    margin: auto;
+    margin: -1rem auto;
     font-family: sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #fff9de;
+    /* background-color: maroon; */
+    background: linear-gradient(to bottom, rgba(130,0,0,1) -75%, rgba(176,0,0,1) 400%);
+    height: 3rem;
+    padding: 0 10px;
+
 }
 
 .subname_banner {
@@ -118,32 +131,36 @@ a {
 /* Navigation menu */
 .nav {
     background-color: #fff9de;
-    width: 225px;
-    height: 100%;
+    width: 100%;
     text-align: right;
-    border-bottom: 20px solid maroon;
-    border-bottom-right-radius: 10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .nav li {
+    list-style-type: none;
     padding: 5px;
     font-size: 2rem;
-    width: 100%;
-    border-right: 20px solid maroon;
+    width: 150px;
+    border-right: 20px solid transparent;
 }
 
 .nav li:hover {
     background-color: #fff9de;
     background-image: radial-gradient(circle at top left, maroon, #e43 2px, transparent 2px, transparent 8px, maroon 8px, #e43 10px, transparent 10px, transparent 16px, maroon 16px, #e43 18px, transparent 18px, transparent 24px, maroon 24px, #e43 26px, transparent 26px, transparent 32px),
-    radial-gradient(circle at bottom left, maroon, #e43 2px, transparent 2px, transparent 8px, maroon 8px, #e43 10px, transparent 10px, transparent 16px, maroon 16px, #e43 18px, transparent 18px, transparent 24px, maroon 24px, #e43 26px, transparent 26px, transparent 32px);
-    border-right-width: 2px;
+    radial-gradient(circle at bottom left, maroon, #e43 2px, transparent 2px, transparent 8px, maroon 8px, #e43 10px, transparent 10px, transparent 16px, maroon 16px, #e43 18px, transparent 18px, transparent 24px, maroon 24px, #e43 26px, transparent 26px, transparent 32px),
+    radial-gradient(circle at bottom right, maroon, #e43 2px, transparent 2px, transparent 8px, maroon 8px, #e43 10px, transparent 10px, transparent 16px, maroon 16px, #e43 18px, transparent 18px, transparent 24px, maroon 24px, #e43 26px, transparent 26px, transparent 32px),
+    radial-gradient(circle at bottom top right, maroon, #e43 2px, transparent 2px, transparent 8px, maroon 8px, #e43 10px, transparent 10px, transparent 16px, maroon 16px, #e43 18px, transparent 18px, transparent 24px, maroon 24px, #e43 26px, transparent 26px, transparent 32px);
 }
 
 .nav a {
     text-decoration: none;
     font-family: Oswald;
     color: maroon;
-    width: 100%;
+    width: 150px;
     height: 40px;
 
 }
