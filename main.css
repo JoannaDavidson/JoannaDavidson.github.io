@@ -133,8 +133,7 @@ a {
     background-color: #fff9de;
     width: 100%;
     text-align: center;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+    border: 10px solid transparent;
 }
 
 .nav ul {
@@ -146,9 +145,8 @@ a {
 .nav li {
     list-style-type: none;
     padding: 5px;
-    font-size: 2rem;
-    width: 150px;
-    border-right: 20px solid transparent;
+    font-size: 1.2rem;
+    width: 100px;
 }
 
 .nav li:hover {
