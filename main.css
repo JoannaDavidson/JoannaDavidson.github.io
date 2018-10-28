@@ -132,9 +132,12 @@ a {
 .nav {
     background-color: #fff9de;
     width: 100%;
-    text-align: right;
+    text-align: center;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
+}
+
+.nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
