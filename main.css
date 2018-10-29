@@ -193,12 +193,12 @@ a {
     animation: 1s ease-out 0s 1 slide;  
 }
 /* About Me page */
-
+/* 
 .aboutme_content {
     width: 75%;
     min-width: 300px;
     padding: 5px;
-}
+} */
 
 .about_image_div {
     width: 20%;
