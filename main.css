@@ -194,6 +194,12 @@ a {
 }
 /* About Me page */
 
+.aboutme_content {
+    width: 75%;
+    min-width: 300px;
+    padding: 5px;
+}
+
 .about_image_div {
     width: 20%;
     margin: 10px;
@@ -212,6 +218,7 @@ a {
 #page-container__portfolio {
     padding: 20px;
     width: 75%;
+    min-width: 300px;
 }
 
 .development_section {
@@ -337,6 +344,7 @@ a {
 #page-container__resume {
     padding: 20px;
     width: 75%;
+    min-width: 300px;
 }
 
 .resume-heading {
