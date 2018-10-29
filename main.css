@@ -360,6 +360,8 @@ a {
 
 .pdf-icon {
     float: right;
+    font-size: 0.9rem;
+    font-weight: normal;
 }
 
 .resume-section {
