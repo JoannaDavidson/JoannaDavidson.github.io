@@ -130,7 +130,6 @@ a {
 
 /* Navigation menu */
 .nav {
-    background-color: #fff9de;
     width: 100%;
     text-align: center;
     border: 10px solid transparent;
@@ -143,6 +142,7 @@ a {
 }
 
 .nav li {
+    background-color: #fff9de;
     list-style-type: none;
     padding: 5px;
     font-size: 1.2rem;
