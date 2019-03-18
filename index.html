@@ -5,15 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Joanna I. Davidson</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src='main.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 <body>
+    <!-- navbar -->  
+    <nav class="navbar navbar-expand-sm fixed-top ">  
+        <a class="navbar-brand" href="#">Joanna Imogen Davidson</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button> -->
+        <span class="navbar-toggler-icon collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></span>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item"><a onclick="aboutMeUnhide()" class="nav-link" data-toggle="collapse" data-target="#navbarSupportedContent" href="#">About Me</a></li>
+                <li class="nav-item"><a onclick="portfolioUnhide()" class="nav-link" data-toggle="collapse" data-target="#navbarSupportedContent" href="#">Portfolio</a></li>
+                <li class="nav-item"><a onclick="resumeUnhide()" class="nav-link" data-toggle="collapse" data-target="#navbarSupportedContent" href="#">R&eacute;sum&eacute;</a></li>
+            </ul> 
+        </div>
+    </nav>
+    <!-- header -->
     <div class="header-container">
         <div class="header_left eye-border"><img class="logo" src="assets/JID-Luckys.jpg"></div>
-        <div class="social_container">
-            <ul class="header-contacts">
+        <div class="social-container">
+            <ul class="social-contacts">
                 <li><a target="_blank" href="https://github.com/joannadavidson"><i class="fab fa-github"></i></a></li>
                 <li><a target="_blank" href="https://codepen.io/joannadavidson/"><i class="fab fa-codepen"></i></a></li>
                 <li><a target="_blank" href="https://www.linkedin.com/in/joannadavidson/"><i class="fab fa-linkedin"></i></a></li>
@@ -21,23 +43,12 @@
                 <li><a target="_blank" href="mailto:joanna@shrikesong.com"><i class="fa fa-envelope"></i></a></li>
             </ul>
         </div>
-        <div class="header-banner">
-            <div class="marquee"><p>Joanna Imogen Davidson</p></div>
-            <div class="subname_banner"><div>Software Development</div><div>Creative Writing</div><div>IT Support</div></div>
-               <div class="nav">
-                <ul>
-                    <li class="nav__bio"><a onclick="aboutMeUnhide()" class="nav__bio-link" href="#">About Me</a></li>
-                    <li class="nav__portfolio"><a onclick="portfolioUnhide()" class="nav__portfolio-link" href="#">Portfolio</a></li>
-                    <li class="nav__resume"><a onclick="resumeUnhide()" class="nav__resume-link" href="#">R&eacute;sum&eacute;</a></li>
-                </ul>       
-            </div>
-        </div>
     </div>
     <div class="page-container">
         <div id="page-container__about" class="content_section">
             <h1>Welcome!</h1>
             <div  class="aboutme_content">Software and Web developer with over 10 years of Technology Support experience (including helpdesk, networking, VoIP, CCTV, access control). I also offer technical and creative writing services to meet all your professional needs.
-                <div class="about_image_div"><image class="about_image" src="assets/JID-Hat.jpg"></div>
+                <div class="about_image_div"></div>
             </div>
             <div  class="aboutme_content">In October 2018, I completed the coding immersive cohort at Momentum Learning. There I learned more JavaScript and focused on Ruby on Rails to develop apps with SQLite and PostgreSQL. This added to my knowledge and experience with LAMP sites, content management systems such as Word Press and Joomla, and an acute focus on the end user experience. My background in IT Support, focused on client needs and desires, drives my development goals whether I serve in a position as a full-stack developer or back-end only. 
             </div>
@@ -88,54 +99,54 @@
         </div>
         <div id="page-container__resume" class="content_section hide">
             <div class="resume-heading">Joanna I. Davidson <a class="pdf-icon" href="assets/JoannaDavidsonResume.pdf">Download PDF version <i class="fas fa-file-pdf"></i></a></div>
-            <div class="resume-section">Durham, NC | joanna@shrikesong.com</div>
-            <div class="resume-heading">Purpose</div>
-            <div class="resume-section">Creative professional and eager learner seeking to employ knowledge of Ruby on Rails and agile development along with experience focusing on end user satisfaction into a software development career.</div>
+            <div class="resume-section">
+                Durham, NC (open to remote or relocation) | joanna@shrikesong.com
+            </div>
             <div class="resume-heading">Skills</div>
             <div class="resume-section">
                 <dl>
-                    <dt>Languages</dt>
-                        <dd>Ruby on Rails | HTML5/CSS3 | JavaScript | LAMP sites | PHP | PostgreSQL</dd>
-                    <dt>Software</dt>
-                        <dd>MS Office, Visio | Exchange Server (2007, 2013) | Windows Server (2008, 2012), Active Directory</dd>
-                        <dd>Adobe Creative Cloud (Photoshop, Illustrator, InDesign, Acrobat Pro, Dreamweaver)</dd>
-                        <dd>Imaging and backups (Retrospect, Ghost, Clonezilla, Acronis </dd>
-                        <dd>Connectivity (PuTTY, Filezilla, Postman, BOS&acirc;NOVA)</dd>
-                        <dd>Windows, Mac OS, and Linux (RHEL/Fedora, Ubuntu, Knoppix, Kali Linux) devices</dd>
-                        <dd>Content Management Systems (Joomla, WordPress, MediaWiki)</dd>
-                        <dd>EHR/EMR systems (EPIC, Kareo, McKesson, AOD) | Library cataloging and OPAC systems</dd>
-                    <dt>Hardware</dt>
-                        <dd>Mitel phone (3300 ICP, Intertel/Mitel 5000, NuPoint Messenger) - Including analong/digital &amp; VoIP </dd>
-                        <dd>Surveillance/CCTV (EverFocus, Honeywell, Ademco, custom PC) </dd>
-                        <dd>Meraki campus-wide WiFi mesh network devices and dashboard management.</dd>
-                        <dd>SonicWall (Firewall and WiFi access points)</dd>
-                        <dd>NAS, tape, and disk backups</dd>
-                        <dd>IBM system i servers (AS/400, i series)</dd>
-                        <dd>Access Control systems (Honeywell, KABA, Keri Systems)</dd>
-                        <dd>Dell and HP network switches</dd>
-                        <dd>Thin and Zero clients (configuration and deployment)</dd>
-                        <dd>Xerox and Konica-Minolta MFP systems</dd>
-                        <dd>Point-of-Sale terminals and peripherals</dd>
-                    <dt>Other</dt>
-                        <dd>Agile Development | Technical Writing, Creative Writing, Poetry | Public Speaking</dd>
-                        <dd>Proper network cable running, terminating, and labeling | Creating network diagrams</dd>
-                        <dd>De-escalation techniques, event marshaling/peacekeeping</dd>
-                        <dd>Harm reduction training and volunteering</dd>
-                        <dd>Familiar with HIPAA, HITECH, and PCI compliance</dd>
+                    <dt class="job-date">Languages</dt>
+                        <dd class="job-descr">Ruby on Rails | HTML5/CSS3 | JavaScript | LAMP sites | PHP | PostgreSQL</dd>
+                    <dt class="job-date">Software</dt>
+                        <dd class="job-descr">MS Office, Visio | Exchange Server (2007, 2013) | Windows Server (2008, 2012), Active Directory</dd>
+                        <dd class="job-descr">Adobe Creative Cloud (Photoshop, Illustrator, InDesign, Acrobat Pro, Dreamweaver)</dd>
+                        <dd class="job-descr">Imaging and backups (Retrospect, Ghost, Clonezilla, Acronis </dd>
+                        <dd class="job-descr">Connectivity (PuTTY, Filezilla, Postman, BOS&acirc;NOVA)</dd>
+                        <dd class="job-descr">Windows, Mac OS, and Linux (RHEL/Fedora, Ubuntu, Knoppix, Kali Linux) devices</dd>
+                        <dd class="job-descr">Content Management Systems (Joomla, WordPress, MediaWiki)</dd>
+                        <dd class="job-descr">EHR/EMR systems (EPIC, Kareo, McKesson, AOD) | Library cataloging and OPAC systems</dd>
+                    <dt class="job-date">Hardware</dt>
+                        <dd class="job-descr">Mitel phone (3300 ICP, Intertel/Mitel 5000, NuPoint Messenger) - Including analong/digital &amp; VoIP </dd>
+                        <dd class="job-descr">Surveillance/CCTV (EverFocus, Honeywell, Ademco, custom PC) </dd>
+                        <dd class="job-descr">Meraki campus-wide WiFi mesh network devices and dashboard management.</dd>
+                        <dd class="job-descr">SonicWall (Firewall and WiFi access points)</dd>
+                        <dd class="job-descr">NAS, tape, and disk backups</dd>
+                        <dd class="job-descr">IBM system i servers (AS/400, i series)</dd>
+                        <dd class="job-descr">Access Control systems (Honeywell, KABA, Keri Systems)</dd>
+                        <dd class="job-descr">Dell and HP network switches</dd>
+                        <dd class="job-descr">Thin and Zero clients (configuration and deployment)</dd>
+                        <dd class="job-descr">Xerox and Konica-Minolta MFP systems</dd>
+                        <dd class="job-descr">Point-of-Sale terminals and peripherals</dd>
+                    <dt class="job-date">Other</dt>
+                        <dd class="job-descr">Agile Development | Technical Writing, Creative Writing, Poetry | Public Speaking</dd>
+                        <dd class="job-descr">Proper network cable running, terminating, and labeling | Creating network diagrams</dd>
+                        <dd class="job-descr">De-escalation techniques, event marshaling/peacekeeping</dd>
+                        <dd class="job-descr">Harm reduction training and volunteering</dd>
+                        <dd class="job-descr">Familiar with HIPAA, HITECH, and PCI compliance</dd>
                 </dl>
             </div>
             <div class="resume-heading">Technical Experience</div>
             <div class="resume-section">
                 <dl>
-                    <dt>2013&ndash;2015</dt>
-                        <dd><b><a href="https://gallowayridge.com/">Galloway Ridge at Fearrington</a></b> | Pittsboro, NC</dd>
+                    <dt class="job-date">2013&ndash;2015</dt>
+                        <dd class="job-company"><b><a href="https://gallowayridge.com/">Galloway Ridge at Fearrington</a></b> | Pittsboro, NC</dd>
                         <dd class="job-title">IT Support Specialist</dd>
                         <dd class="job-descr">Administered phone/voicemail systems, migrating from analog/digital to VoIP</dd>
                         <dd class="job-descr">Managed 300+ users and 200+ devices in Active Directory and Exchange Server</dd>
                         <dd class="job-descr">Resolve issues and queries related to computer networks, hardware, and software</dd>
                         <dd class="job-descr"></dd>
-                        <dt>2007&ndash;2011</dt>
-                        <dd><b><a href="https://www.shoeshow.com/">SHOE SHOW, INC.</a></b> | Concord, NC</dd>
+                        <dt class="job-date">2007&ndash;2011</dt>
+                        <dd class="job-company"><b><a href="https://www.shoeshow.com/">SHOE SHOW, INC.</a></b> | Concord, NC</dd>
                         <dd class="job-title">Technology Specialist</dd>
                         <dd class="job-descr">Supervised CCTV and alarm systems for over 700 retail locations</dd>
                         <dd class="job-descr">Resolve issues and queries related to computer networks, hardware, and software</dd>
@@ -147,37 +158,43 @@
             <div class="resume-heading">Education</div>
             <div class="resume-section">
                 <dl>
-                    <dt>2018</dt>
-                        <dd><b><a href="https://www.momentumlearn.com/">Momentum Learning</a></b> | Durham, NC</dd>
-                        <dd>Dedicated 12-weeks specializing in highly focused, immersive training centered on language fluency, object-oriented programming, and project-based learning.</dd>
-                    <dt>1995&ndash;1998</dt>
-                        <dd><b><a href="https://catawba.edu/">Catawba College</a></b> | Salisbury, NC</dd>
-                        <dd>Pursued Political Science and Communication Arts.</dd>
+                    <dt class="job-date">2018</dt>
+                        <dd class="job-company"><b><a href="https://www.momentumlearn.com/">Momentum Learning</a></b> | Durham, NC</dd>
+                        <dd class="job-descr">Dedicated 12-weeks specializing in highly focused, immersive training centered on language fluency, object-oriented programming, and project-based learning.</dd>
+                    <dt class="job-date">1995&ndash;1998</dt>
+                        <dd class="job-company"><b><a href="https://catawba.edu/">Catawba College</a></b> | Salisbury, NC</dd>
+                        <dd class="job-descr">Pursued Political Science and Communication Arts.</dd>
                 </dl>
             </div>
             <div class="resume-heading">Certifications</div>
             <div class="resume-section">
                 <dl>
-                    <dt>2007&ndash;Present</dt>
-                        <dd><a target="_blank" href="https://www.certmetrics.com/comptia/public/verification.aspx?code=3815S4MDWFQQSP0S"><img class="comptia-logo" src="assets/comptiaa+.jpg"><br>
+                    <dt class="job-date">2007&ndash;Present</dt>
+                        <dd class="job-descr"><a target="_blank" href="https://www.certmetrics.com/comptia/public/verification.aspx?code=3815S4MDWFQQSP0S"><img class="comptia-logo" src="assets/comptiaa+.jpg"><br>
                             COMP001005693577</a></dd>
                 </dl>
             </div>
             <div class="resume-heading">Other Work Experience</div>
             <div class="resume-section">
                 <dl>
-                    <dt>2017&ndash;Present</dt>
-                        <dd><b><a href="https://treehouselit.com"><i>Treehouse</i> Literary Magazine</a></b> | Durham, NC</dd>
+                    <dt class="job-date">2019&ndash;Present</dt>
+                        <dd class="job-company"><b>Orange County Public Library</b> | Hillsborough, NC</dd>
+                        <dd class="job-title">Library Assistant</dd>
+                        <dd class="job-descr">Serve public computer lab, answer technical questions.</dd>
+                        <dd class="job-descr">Welcome public, handling circulation requests in person and over phone.</dd>
+                        <dd class="job-descr">Shelving, organizing library materials.</dd>
+                    <dt class="job-date">2017&ndash;Present</dt>
+                        <dd class="job-company"><b><a href="https://treehouselit.com"><i>Treehouse</i> Literary Magazine</a></b> | Durham, NC</dd>
                         <dd class="job-title">Poetry Editor</dd>
                         <dd class="job-descr">Judging directly and with others on editorial board to determine inclusion into journal</dd>
-                    <dt>2017&ndash;2018</dt>
-                        <dd><b><a href="http://www.shyas.com/">S&amp;H Youth and Adult Services</a></b> | Salisbury, NC</dd>
+                    <dt class="job-date">2017&ndash;2018</dt>
+                        <dd class="job-company"><b>S&amp;H Youth and Adult Services</b> | Salisbury, NC</dd>
                         <dd class="job-title">Medical Records Specialist</dd>
                         <dd class="job-descr">Digitized documents and entered information into EHR system</dd>
                         <dd class="job-descr">Handled release of information requests</dd>
                         <dd class="job-descr">Organized, retrieved, and assembled medical record charts</dd>
-                    <dt>1997&ndash;2007</dt>
-                        <dd><b><a href="https://www.rowancountync.gov/307/Library">Rowan Public Library</a></b> | Salisbury, NC</dd>
+                    <dt class="job-date">1997&ndash;2007</dt>
+                        <dd class="job-company"><b>Rowan Public Library</b> | Salisbury, NC</dd>
                         <dd class="job-title">Library Assistant</dd>
                         <dd class="job-descr">Processed, repaired, and withdrew library materials.</dd>
                         <dd class="job-descr">Created labels for book plates in-house instead of sending off to printers</dd>
@@ -187,23 +204,23 @@
             <div class="resume-heading">Memberships &amp; Boards</div>
             <div class="resume-section">
                 <dl>
-                    <dt>2014&ndash;Present</dt>
-                        <dd><b><a href="https://www.ncpoetrysociety.org/">North Carolina Poetry Society</a></b></dd>
+                    <dt class="job-date">2014&ndash;Present</dt>
+                        <dd class="job-company"><b><a href="https://www.ncpoetrysociety.org/">North Carolina Poetry Society</a></b></dd>
                         <dd class="job-title">Member</dd>
-                    <dt>2015&ndash;Present</dt>
-                        <dd><b><a href="https://www.ncwriters.org/">North Carolina Writers' Network</a></b></dd>
+                    <dt class="job-date">2015&ndash;Present</dt>
+                        <dd class="job-company"><b><a href="https://www.ncwriters.org/">North Carolina Writers' Network</a></b></dd>
                         <dd class="job-title">Member</dd>
-                    <dt>2004&ndash;2007</dt>
-                        <dd><b>Salisbury Parks &amp; Recreation Advisory Board</b></dd>
+                    <dt class="job-date">2004&ndash;2007</dt>
+                        <dd class="job-company"><b>Salisbury Parks &amp; Recreation Advisory Board</b></dd>
                         <dd class="job-title">Member</dd>
-                    <dt>2003&ndash;2005</dt>
-                        <dd><b><a href="http://www.mlalibrary.org/">Metrolina Library Association</a></b> | Board of Directors</dd>
+                    <dt class="job-date">2003&ndash;2005</dt>
+                        <dd class="job-company"><b><a href="http://www.mlalibrary.org/">Metrolina Library Association</a></b> | Board of Directors</dd>
                         <dd class="job-title">Director of Public Libraries</dd>
                 </dl>
             </div>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script type="text/javascript" src='main.js'></script>
 </body>
 </html>
 

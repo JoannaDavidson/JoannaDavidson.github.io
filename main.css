@@ -14,14 +14,51 @@ a {
     text-decoration: none;
 }
 
+/* navbar */
+.navbar {
+    background: rgba(130,0,0,1);
+}
+
+.nav-link , .navbar-brand {
+    color: #f4f4f4;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.nav-link{
+    margin-right: 1em !important;
+}
+
+.nav-link:hover {
+    background: #f4f4f4;
+    color: rgba(130,0,0,1);
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background:#fff !important;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+.fa-bars {
+    font-size: 1.5rem;
+}
+
+/* header */
 .header-container {
     width: 100%;
     background: linear-gradient(to bottom, rgba(130,0,0,1) 0%, rgba(176,0,0,1) 100%);
     padding: 20px;
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-start;
+    /* flex-direction: row; */
+    /* justify-content: flex-start; */
 }
 .eye-border {
     border: 10px double;
@@ -31,7 +68,7 @@ a {
     background: radial-gradient(circle at bottom left, transparent, transparent 23px, #fff9de 23px, #fff9de 25px, transparent 25px, transparent 28px, #fff9de 28px, #fff9de 30px, transparent 30px, transparent 33px, #fff9de 33px, #fff9de 40px, transparent 40px, transparent) bottom left,
     radial-gradient(circle at top right, transparent, transparent 23px, #fff9de 23px, #fff9de 25px, transparent 25px, transparent 28px, #fff9de 28px, #fff9de 30px, transparent 30px, transparent 33px, #fff9de 33px, #fff9de 40px, transparent 40px, transparent) top right,
     radial-gradient(at top left, transparent, transparent) top left,
-    radial-gradient(at bottom right, transparent, transparent) bottom right; */
+    radial-gradient(at bottom right, transparent, transparent) bottom right;
     background-size: 50% 50%;
     background-repeat: no-repeat;
 }
@@ -52,118 +89,32 @@ a {
     border-radius: 50%;    
 }
 
-.header-banner {
-    flex-grow: 1;
-    min-width: 500px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.social_container {
+.social-container {
     padding: 0 10px;
-    width: 60px;
-    height: 150px;
+    /* width: 60px;
+    height: 150px; */
 }
 
-.header-contacts {
+.social-contacts {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
+    margin: auto;
+    /* flex-direction: column; */
     color: #ccc;
     font-size: 1.5rem;
 }
 
-.header-contacts li {
+.social-contacts li {
     list-style: none;
     padding: 3px;
-    border: 2px solid transparent;
-    border-radius: 50% 0;
+    margin: auto;
+    /* border: 2px solid transparent; */
+    /* border-radius: 50% 0; */
 }
 
-.header-contacts li:hover {
-    border: 2px solid #fff9de;
-}
-
-.header-contacts a{
+.social-contacts a{
     color: #fff9de;
     font-size: 1.5rem;
-}
-
-.header-contacts a:hover{
-    color: #fff9de;
-}
-
-.marquee {
-    margin: 20px;
-    border: 3px solid #fff9de;
-    height: 20px;
-    width: 90%;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row;
-}
-
-.marquee p {
-    margin: -1rem auto;
-    font-family: sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #fff9de;
-    /* background-color: maroon; */
-    background: linear-gradient(to bottom, rgba(130,0,0,1) -75%, rgba(176,0,0,1) 400%);
-    height: 3rem;
-    padding: 0 10px;
-
-}
-
-.subname_banner {
-    width: 500px;
-    font-size: 1rem;
-    color: #fff9de;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/* Navigation menu */
-.nav {
-    width: 100%;
-    text-align: center;
-    border: 10px solid transparent;
-}
-
-.nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.nav li {
-    background-color: #fff9de;
-    list-style-type: none;
-    padding: 5px;
-    font-size: 1.5rem;
-    width: 150px;
-}
-
-.nav li:hover {
-    background-color: #fff9de;
-    background-image: radial-gradient(circle at top left, maroon, #e43 2px, transparent 2px, transparent 8px, maroon 8px, #e43 10px, transparent 10px, transparent 16px, maroon 16px, #e43 18px, transparent 18px, transparent 24px, maroon 24px, #e43 26px, transparent 26px, transparent 32px),
-    radial-gradient(circle at bottom left, maroon, #e43 2px, transparent 2px, transparent 8px, maroon 8px, #e43 10px, transparent 10px, transparent 16px, maroon 16px, #e43 18px, transparent 18px, transparent 24px, maroon 24px, #e43 26px, transparent 26px, transparent 32px),
-    radial-gradient(circle at bottom right, maroon, #e43 2px, transparent 2px, transparent 8px, maroon 8px, #e43 10px, transparent 10px, transparent 16px, maroon 16px, #e43 18px, transparent 18px, transparent 24px, maroon 24px, #e43 26px, transparent 26px, transparent 32px),
-    radial-gradient(circle at bottom top right, maroon, #e43 2px, transparent 2px, transparent 8px, maroon 8px, #e43 10px, transparent 10px, transparent 16px, maroon 16px, #e43 18px, transparent 18px, transparent 24px, maroon 24px, #e43 26px, transparent 26px, transparent 32px);
-}
-
-.nav a {
-    text-decoration: none;
-    font-family: Oswald;
-    color: maroon;
-    width: 150px;
-    height: 40px;
-
 }
 
 .page-container {
@@ -173,7 +124,7 @@ a {
 
 #page-container__about {
     padding: 20px;
-    width: 75%;
+    width: 100%;
 }
 
 .hide {
@@ -190,15 +141,11 @@ a {
 }
 
 .content_section {
-    animation: 1s ease-out 0s 1 slide;  
+    animation: 1s ease-out 0s 1 slide;
+    -moz-animation: 1s ease-out 0s 1 slide;
+    -webkit-animation: 1s ease-out 0s 1 slide;      
 }
 /* About Me page */
-/* 
-.aboutme_content {
-    width: 75%;
-    min-width: 300px;
-    padding: 5px;
-} */
 
 .about_image_div {
     width: 20%;
@@ -207,7 +154,6 @@ a {
 }
 
 .about_image {
-/*     width: 20%; */
     max-width: 350px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -217,7 +163,7 @@ a {
 
 #page-container__portfolio {
     padding: 20px;
-    width: 75%;
+    width: 100%;
     min-width: 300px;
 }
 
@@ -283,67 +229,11 @@ a {
     height: 140px;
 }
 
-.css_examples_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.css_examples_header {
-    width: 100%;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.css_examples_header p {
-    font-size: 1rem;
-}
-
-.css_examples_text {
-    font-size: 0.9rem;
-    background-color: #e43;
-    border: 2px solid #111;
-    text-align: center;
-    color: #fff9de
-}
-
-.css_examples {
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    box-shadow: 5px 5px 10px #911;
-    border-radius: 50% 50% 50% 0;
-    border: 5px solid #ffc21f;
-    border-left-width: 10px;
-    border-bottom-width: 10px;
-}
-  
-.css_examples:hover {
-    box-shadow: 8px 10px 15px #e43;
-}
-  
-.css_examples:nth-child(1){
-    background-color: rgba(0,104,24,1.0);
-    background-image: repeating-linear-gradient(50deg, transparent, transparent 2px, rgba(0,104,24,.4) 2px, rgba(0,104,24,.4) 3px, transparent 3px, transparent 5px, rgba(0,104,24,.4) 5px),
-    repeating-linear-gradient(rgba(200,0,0,.7), rgba(200,0,0,.7) 2px, rgba(44,44,128,.5) 2px, rgba(44,44,128,.5) 12px, transparent 14px, transparent 15px, rgba(44,44,128,.5) 15px, rgba(44,44,128,.5) 16px, transparent 16px, transparent 31px, rgba(16,16,16,.7) 31px, rgba(16,16,16,.7) 32px, transparent 32px, transparent 47px, rgba(16,16,16,.7) 47px, rgba(16,16,16,.7) 48px, transparent 48px, transparent 49px, rgba(16,16,16,.7) 49px, rgba(16,16,16,.7) 60px, rgba(200,0,0,.7) 60px, rgba(200,0,0,.7) 61px, rgba(16,16,16,.7) 61px, rgba(16,16,16,.7) 72px, transparent 72px, transparent 73px, rgba(16,16,16,.7) 73px, rgba(16,16,16,.7) 74px, transparent 74px, transparent 89px, rgba(16,16,16,.7) 89px, rgba(16,16,16,.7) 90px, transparent 91px, transparent 106px, rgba(44,44,128,.5) 106px, rgba(44,44,128,.5) 107px, transparent 107px, transparent 108px, rgba(44,44,128,.5) 108px, rgba(44,44,128,.5) 119px),
-    repeating-linear-gradient(270deg, rgba(200,0,0,.8), rgba(200,0,0,.8) 2px, rgba(44,44,128,.6) 2px, rgba(44,44,128,.6) 12px, transparent 14px, transparent 15px, rgba(44,44,128,.6) 15px, rgba(44,44,128,.6) 16px, transparent 16px, transparent 31px, rgba(16,16,16,.8) 31px, rgba(16,16,16,.8) 32px, transparent 32px, transparent 47px, rgba(16,16,16,.8) 47px, rgba(16,16,16,.8) 48px, transparent 48px, transparent 49px, rgba(16,16,16,.8) 49px, rgba(16,16,16,.8) 60px, rgba(200,0,0,.8) 60px, rgba(200,0,0,.8) 61px, rgba(16,16,16,.8) 61px, rgba(16,16,16,.8) 72px, transparent 72px, transparent 73px, rgba(16,16,16,.8) 73px, rgba(16,16,16,.8) 74px, transparent 74px, transparent 89px, rgba(16,16,16,.8) 89px, rgba(16,16,16,.8) 90px, transparent 91px, transparent 106px, rgba(44,44,128,.6) 106px, rgba(44,44,128,.6) 107px, transparent 107px, transparent 108px, rgba(44,44,128,.6) 108px, rgba(44,44,128,.6) 119px);
-}
-  
-.css_examples:nth-child(2){
-    background-color: rgba(0,104,24,.7);
-    background-image: repeating-linear-gradient(50deg, transparent, transparent 2px, rgba(0,104,24,.4) 2px, rgba(0,104,24,.4) 3px, transparent 3px, transparent 5px, rgba(0,104,24,.4) 5px),
-    repeating-linear-gradient(rgba(200,0,0,.6), rgba(200,0,0,.6) 2px, rgba(44,44,128,.4) 2px, rgba(44,44,128,.4) 12px, transparent 14px, transparent 15px, rgba(44,44,128,.4) 15px, rgba(44,44,128,.4) 16px, transparent 16px, transparent 31px, rgba(16,16,16,.4) 31px, rgba(16,16,16,.4) 32px, transparent 32px, transparent 47px, rgba(16,16,16,.4) 47px, rgba(16,16,16,.4) 48px, transparent 48px, transparent 49px, rgba(16,16,16,.4) 49px, rgba(16,16,16,.4) 60px, rgba(200,0,0,.6) 60px, rgba(200,0,0,.6) 61px, rgba(16,16,16,.4) 61px, rgba(16,16,16,.4) 72px, transparent 72px, transparent 73px, rgba(16,16,16,.4) 73px, rgba(16,16,16,.4) 74px, transparent 74px, transparent 89px, rgba(16,16,16,.4) 89px, rgba(16,16,16,.4) 90px, transparent 91px, transparent 106px, rgba(44,44,128,.4) 106px, rgba(44,44,128,.4) 107px, transparent 107px, transparent 108px, rgba(44,44,128,.4) 108px, rgba(44,44,128,.4) 119px),
-    repeating-linear-gradient(270deg, rgba(200,0,0,.7), rgba(200,0,0,.7) 2px, rgba(44,44,128,.5) 2px, rgba(44,44,128,.5) 12px, transparent 14px, transparent 15px, rgba(44,44,128,.5) 15px, rgba(44,44,128,.5) 16px, transparent 16px, transparent 31px, rgba(16,16,16,.5) 31px, rgba(16,16,16,.5) 32px, transparent 32px, transparent 47px, rgba(16,16,16,.5) 47px, rgba(16,16,16,.5) 48px, transparent 48px, transparent 49px, rgba(16,16,16,.5) 49px, rgba(16,16,16,.5) 60px, rgba(200,0,0,.7) 60px, rgba(200,0,0,.7) 61px, rgba(16,16,16,.5) 61px, rgba(16,16,16,.5) 72px, transparent 72px, transparent 73px, rgba(16,16,16,.5) 73px, rgba(16,16,16,.5) 74px, transparent 74px, transparent 89px, rgba(16,16,16,.5) 89px, rgba(16,16,16,.5) 90px, transparent 91px, transparent 106px, rgba(44,44,128,.5) 106px, rgba(44,44,128,.5) 107px, transparent 107px, transparent 108px, rgba(44,44,128,.5) 108px, rgba(44,44,128,.5) 119px);
-}
-
 /* Resume page */
 
 #page-container__resume {
     padding: 20px;
-    width: 75%;
+    width: 100%;
     min-width: 300px;
 }
 
@@ -376,32 +266,97 @@ a {
     color: #111;
 }
 
-dl {
-
-}
-
-dt {
-    float: left;
-    clear: left;
-    width: 120px;
-    text-align: right;
+.job-date {
     font-style: italic;
 }
 
-dd {
+.job-descr, .job-title, .job-company {
     margin: 0 0 0 135px;
     padding: 0 0 0.5em 0;
+    font-size: 1rem;
 }
 
 .job-title {
     font-style: italic;
-    font-size: 1rem;
-}
-
-.job-descr {
-    font-size: 1rem;
 }
 
 .comptia-logo {
     width: 50%;
+}
+
+@media screen and (max-width: 413px) {
+    /* Universal Styles */ 
+
+    .navbar {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-container {
+        margin-top: 5rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social-container {
+        width: 225px;
+        height: 42px;
+        margin: 0 auto;
+    }
+    
+    .social-contacts {
+        flex-direction: row;
+    }
+
+    .header_left {
+        margin: 0 auto;
+    }
+
+    .job-date {
+        clear: left;
+        width: 120px;
+        text-align: center;
+    }
+
+    .job-descr, .job-title, .job-company {
+        margin: 5px;
+    }
+
+}
+    
+@media screen and (min-width: 414px) {
+    /* Universal Styles */
+
+    .navbar-toggler-icon {
+        visibility: hidden;
+    }
+
+    .header-container {
+        margin-top: 3rem;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .social-container {
+        width: 60px;
+        height: 150px;
+    }
+
+    .social-contacts {
+        flex-direction: column;
+    }
+
+    .job-date {
+        float: left;
+        clear: left;
+        width: 120px;
+        text-align: right;
+    }
+
+    .job-descr, .job-title, .job-company {
+        margin: 0 0 0 135px;
+    }
+
 }
