@@ -57,8 +57,6 @@ a {
     padding: 20px;
     display: flex;
     flex-wrap: nowrap;
-    /* flex-direction: row; */
-    /* justify-content: flex-start; */
 }
 .eye-border {
     border: 10px double;
@@ -73,7 +71,7 @@ a {
     background-repeat: no-repeat;
 }
 
-.header_left {
+.header-left {
     width: 225px;
     height: 200px;
     border-radius: 50% 0;
@@ -91,15 +89,12 @@ a {
 
 .social-container {
     padding: 0 10px;
-    /* width: 60px;
-    height: 150px; */
 }
 
 .social-contacts {
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-    /* flex-direction: column; */
     color: #ccc;
     font-size: 1.5rem;
 }
@@ -108,23 +103,11 @@ a {
     list-style: none;
     padding: 3px;
     margin: auto;
-    /* border: 2px solid transparent; */
-    /* border-radius: 50% 0; */
 }
 
 .social-contacts a{
     color: #fff9de;
     font-size: 1.5rem;
-}
-
-.page-container {
-    display: flex;
-    align-content: flex-start;
-}
-
-#page-container__about {
-    padding: 20px;
-    width: 100%;
 }
 
 .hide {
@@ -145,18 +128,12 @@ a {
     -moz-animation: 1s ease-out 0s 1 slide;
     -webkit-animation: 1s ease-out 0s 1 slide;      
 }
+
 /* About Me page */
 
-.about_image_div {
-    width: 20%;
-    margin: 10px;
-    float: right;
-}
-
-.about_image {
-    max-width: 350px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+#page-container__about {
+    padding: 20px;
+    width: 100%;
 }
 
 /* Portfolio page */
